@@ -1,13 +1,11 @@
 #!groovy
-package com.utils
+import com.utils.*
 
 def call(){
-    
-    node {
+     
         stage("build"){
             build = new build()
             build.buildMaven()
         }
-    }
-
+  
 }
